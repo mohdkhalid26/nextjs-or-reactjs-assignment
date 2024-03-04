@@ -1,0 +1,140 @@
+.related-deals-div {
+  margin-top: 61px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 34px;
+  h2 {
+    width: 70%;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #2c384a;
+  }
+  .related-contents-div {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18px;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .related-content {
+      font-weight: 400;
+      height: 430px;
+      min-width: 340px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      border-radius: 12px;
+      gap: 12px;
+      img {
+        width: 160px;
+        margin-bottom: 43px;
+      }
+      .offer-div {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 7px;
+        span {
+          font-size: 0.875rem;
+          border-radius: 8px;
+          background-color: #f2f4f7;
+          padding: 7px 16px 7px 7px;
+          color: #074786;
+          font-weight: 400;
+        }
+      }
+      span {
+        font-size: 1rem;
+        color: #626e79;
+        font-weight: bold;
+      }
+      p {
+        width: 90%;
+        font-size: 1rem;
+        color: #626e79;
+      }
+      .rate-div {
+        width: 90%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        gap: 16px;
+        :first-child {
+          font-weight: 400;
+          font-size: 1.25rem;
+          color: #5c6874;
+        }
+        :nth-child(2) {
+          font-size: 0.875rem;
+          font-weight: 400;
+          color: #9fa9b3;
+        }
+        :last-child {
+          font-size: 0.875rem;
+          font-weight: 400;
+          color: #ef4c5d;
+        }
+      }
+
+      button {
+        background-color: #1b88f4;
+        width: 90%;
+        font-size: 1rem;
+        border-radius: 12px;
+        color: white;
+        height: 43px;
+        border: none;
+        margin-bottom: 16px;
+      }
+    }
+  }
+  .signup-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    h3 {
+      color: #5c6874;
+      font-size: 2rem;
+      font-weight: 400;
+      width: 43%;
+    }
+    .signup-input-div {
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 12px;
+      input {
+        padding: 0 7px;
+        width: 340px;
+        height: 43px;
+        border-radius: 12px 0 0 12px;
+        background-color: white;
+        border: none;
+        &:focus {
+          outline: none;
+        }
+        font-size: 1rem;
+      }
+      button {
+        width: 92px;
+        height: 43px;
+        border-radius: 0 12px 12px 0;
+        background: #1b88f4;
+        color: white;
+        font-size: 1rem;
+        border: none;
+      }
+    }
+  }
+}
