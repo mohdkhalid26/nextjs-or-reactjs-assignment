@@ -1,6 +1,6 @@
 .navbar {
   z-index: 2;
-  position: sticky;
+  position: fixed;
   top: 0%;
   width: 100%;
   min-height: 64px;
@@ -9,6 +9,9 @@
   align-items: center;
   justify-content: center;
   .nav-div {
+    .ham-burger {
+      display: none;
+    }
     width: 70%;
     min-height: 64px;
     display: flex;
@@ -44,6 +47,118 @@
     }
     .todays-deals-span {
       margin-right: 7%;
+    }
+  }
+}
+@media screen and (max-width: 1260px) {
+  .navbar {
+    .nav-div {
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 1102px) {
+  .navbar {
+    .nav-div {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    .nav-div {
+      gap: 5%;
+      .todays-deals-span {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .navbar {
+    .nav-div {
+      .input {
+        img {
+          width: 20px;
+        }
+        input {
+          font-size: 12px;
+        }
+      }
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 660px) {
+  .navbar {
+    .nav-div {
+      gap: 2%;
+      justify-content: center;
+    }
+  }
+}
+@media screen and (max-width: 597px) {
+  .navbar {
+    .nav-div {
+      .input {
+        width: 230px;
+        input {
+          min-height: 25px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 549px) {
+  .navbar {
+    .nav-div {
+      .input {
+        width: 180px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 490px) {
+  .navbar {
+    .nav-div {
+      justify-content: space-between;
+      .hide {
+        display: none;
+      }
+      .show {
+        position: absolute;
+        height: 27px;
+        min-width: 70px;
+        padding: 0 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 7px;
+        color: #212731;
+        background-color: white;
+      }
+      .span1 {
+        left: 25px;
+      }
+
+      .span2 {
+        left: 105px;
+      }
+
+      .span3 {
+        left: 218px;
+      }
+      .ham-burger {
+        display: flex;
+        border-radius: 5px;
+        height: 27px;
+        width: 27px;
+      }
     }
   }
 }

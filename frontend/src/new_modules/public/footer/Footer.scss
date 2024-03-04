@@ -55,3 +55,64 @@ footer {
     }
   }
 }
+
+@media screen and (max-width:1260px) {
+  footer{
+    .footer-div{
+      width: 80%;
+    }
+  }
+}
+@media screen and (max-width:1102px) {
+  footer{
+    .footer-div{
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width:980px) {
+  footer{
+    .footer-div{
+      justify-content: space-between;
+      gap: 0;
+    }
+  }
+}
+
+@media screen and (max-width:810px) {
+  footer {
+    
+    min-height: 380px;
+    .footer-div {
+      
+      .footer-first-cont,
+      .footer-sec-cont {
+        h4 {
+          font-size: 16px;
+        }
+        ul {
+          li {
+            font-size: 10px;
+          }
+        }
+      }
+      .footer-third-cont {
+        gap: 7px;
+        span {
+          font-size: 12px;
+        }
+        img {
+          width: 12px;
+        }
+      }
+    }
+  }
+  
+}
+
+@media screen and (max-width: 405px) {
+  footer{
+    min-height: 330px;
+  }
+}

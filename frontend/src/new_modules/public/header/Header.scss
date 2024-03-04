@@ -1,88 +1,253 @@
 .header {
-    top: 64px;
-    position: sticky;
+  top: 64px;
+  position: fixed;
   width: 100%;
   z-index: 2;
-  background-color: #FBFCFD;
+  background-color: #fbfcfd;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 12px;
-  .header-div{
+  .header-div {
     width: 70%;
     h1 {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        height: 70px;
-        font-size: 3rem;
-        font-weight: 400;
-        color: #2c384a;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      height: 70px;
+      font-size: 3rem;
+      font-weight: 400;
+      color: #2c384a;
     }
     .show-update-date-div {
-        height: 43px;
-        border-top: 2px solid #e1e4e6;
-        border-bottom: 2px solid #e1e4e6;
+      height: 43px;
+      border-top: 2px solid #e1e4e6;
+      border-bottom: 2px solid #e1e4e6;
+      display: flex;
+      color: #4b5665;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.875rem;
+      .first-div-of-show-update-date-div {
         display: flex;
-        color: #4b5665;
         align-items: center;
-        justify-content: space-between;
-        font-size: 0.875rem;
-        .first-div-of-show-update-date-div {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 18px;
-            span {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 7px;
-                img{
-                    width: 20px;
-                }
-            }
+        justify-content: center;
+        gap: 18px;
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 7px;
+          img {
+            width: 20px;
+          }
         }
-        .second-div-of-show-update-date-div {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            img{
-                width: 24px;
-            }
+      }
+      .second-div-of-show-update-date-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 24px;
         }
+      }
     }
     .more-categories-div {
-        height: 61px;
-    color: #4b5665;
-    font-size: 1rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 18px;
-    span {
+      min-height: 61px;
+      color: #4b5665;
+      font-size: 1rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 18px;
+      span {
         display: flex;
         align-items: center;
         justify-content: center;
         background: white;
         border-radius: 12px;
         padding: 9px 21px 9px 21px;
+      }
+    }
+    .path-name-div {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 7px;
+      color: #5c6874;
+      font-size: 1rem;
+      height: 25px;
+      span {
+        img {
+          width: 14px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1260px) {
+  .header {
+    .header-div {
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 1102px) {
+  .header {
+    .header-div {
+      width: 90%;
+    }
+  }
+}
+@media screen and (max-width: 896px) {
+  .header {
+    .header-div {
+      .more-categories-div {
+        gap: 16px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 885px) {
+  .header {
+    .header-div {
+      .more-categories-div {
+        gap: 7px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .header {
+    .header-div {
+      .more-categories-div {
+        gap: 0px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .header {
+    .header-div {
+      h1 {
+        font-size: 2rem;
+      }
+      .show-update-date-div {
+        font-size: 10px;
+        .first-div-of-show-update-date-div {
+          span {
+            img {
+              width: 16px;
+            }
+          }
+        }
+        .second-div-of-show-update-date-div {
+          img {
+            width: 20px;
+          }
+        }
+      }
+      .more-categories-div {
+        font-size: 12px;
+      }
+      .path-name-div {
+        font-size: 12px;
+        span {
+          img {
+            width: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .header {
+    .header-div {
+      .more-categories-div {
+        width: 100%;
+        gap: 7px;
+        overflow-x: scroll;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        span {
+          padding: 9px 0px 9px 0px;
+          min-width: 140px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .header {
+    .header-div {
+      h1 {
+        font-size: 1.75rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 473px) {
+  .header {
+    .header-div {
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 458px) {
+  .header {
+    .header-div {
+      .show-update-date-div {
+        .first-div-of-show-update-date-div {
+          gap: 18px;
+          span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 405px) {
+    .header {
+        .header-div {
+            h1 {
+                font-size: 1.25rem;
+            }
+        }
     }
 }
-.path-name-div {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 7px;
-    color: #5c6874;
-    font-size: 1rem;
-    height: 25px;
-    span {
-        img{
-            width: 14px;
+
+@media screen and (max-width: 394px) {
+.header{
+    .header-div{
+        .path-name-div{
+            gap: 5px;
         }
     }
 }
 }
-}
+@media screen and (max-width: 377px) {
+    .header{
+        .header-div{
+            .path-name-div{
+                gap: 2px;
+            }
+        }
+    }
+    }
+    

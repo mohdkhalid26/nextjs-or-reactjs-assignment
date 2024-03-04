@@ -138,3 +138,161 @@
     }
   }
 }
+
+@media screen and (max-width: 1260px) {
+  .related-deals-div {
+    h2 {
+      width: 80%;
+    }
+    .related-contents-div {
+      width: 80%;
+    }
+    .signup-div {
+      width: 80%;
+    }
+  }
+}
+@media screen and (max-width: 1102px) {
+  .related-deals-div {
+    h2 {
+      width: 90%;
+    }
+    .related-contents-div {
+      width: 90%;
+    }
+    .signup-div {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 889px) {
+  .related-deals-div {
+    .signup-div {
+      h3 {
+        width: 52%;
+      }
+      .signup-input-div {
+        input {
+          width: 290px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .related-deals-div {
+    margin-top: 52px;
+    h2 {
+      font-size: 1.5rem;
+    }
+    .related-contents-div {
+      .related-content {
+        height: 380px;
+        min-width: 290px;
+        img {
+          width: 120px;
+          margin-bottom: 43px;
+        }
+        .offer-div {
+          span {
+            font-size: 10px;
+          }
+        }
+        span {
+          font-size: 12px;
+        }
+        p {
+          font-size: 12px;
+        }
+        .rate-div {
+          :first-child {
+            font-size: 16px;
+          }
+          :nth-child(2) {
+            font-size: 10px;
+          }
+          :last-child {
+            font-size: 10px;
+          }
+        }
+
+        button {
+          font-size: 12px;
+        }
+      }
+    }
+    .signup-div {
+      h3 {
+        font-size: 1.5rem;
+      }
+      .signup-input-div {
+        input {
+          font-size: 12px;
+        }
+        button {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 711px) {
+  .related-deals-div {
+    .signup-div {
+      flex-direction: column;
+      gap: 25px;
+      h3 {
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 493px) {
+  .related-deals-div {
+    h2 {
+      font-size: 1.25rem;
+    }
+    .signup-div {
+      h3 {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 405px) {
+  .related-deals-div {
+    margin-top: 52px;
+    h2 {
+      font-size: 1rem;
+    }
+    .related-contents-div {
+      .related-content {
+        height: 330px;
+        min-width: 270px;
+
+        button {
+          height: 34px;
+          font-size: 12px;
+        }
+      }
+    }
+    .signup-div {
+      h3 {
+        font-size: 1rem;
+      }
+      .signup-input-div {
+        input {
+          width: 250px;
+          height: 43px;
+        }
+        button {
+          height: 43px;
+        }
+      }
+    }
+  }
+}

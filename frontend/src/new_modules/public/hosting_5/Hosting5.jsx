@@ -21,7 +21,6 @@ function Hosting5({ data }) {
                 {d.sMicon ? <img src={d.sMicon} alt="sMicon" /> : ""}
               </div>
               
-              <button className="view-btn">View</button>
               <div className="first-div-of-content-div">
                 {d.img ? <img src={d.img} alt="img" /> : ""}
                 <span>{d.buildName}</span>
@@ -81,6 +80,8 @@ function Hosting5({ data }) {
                     {d.rateImg ? <img src={d.rateImg} alt="rateImg" /> : ""}
                   </span>
                 </div>
+                
+              <button className="view-btn">View</button>
               </div>
             </div>
           );
